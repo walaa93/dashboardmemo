@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!--Start Sidebar-->
+        <nav class="fixed-top align-top" id="sidebar-wrapper" role="navigation">
+            <div class="simplebar-content">
+                <a href="#" class="sidebar-brand">
+                    <span class="align-middle">Memo Code</span>
+                    <hr style="background-color: antiquewhite; margin-bottom: 0; margin-top: 5px;">
+                </a>
+                <ul class="navbar-nav align-self-stretch">
+                    <li class="sidebar-header">Pages</li>
+                    <li><a href="#" class="nav-link text-left active" role="button"><i
+                                class="fas fa-chart-bar"></i>Dahboard</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-user"></i>Profile</a>
+
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-cogs"></i>Setting</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i
+                                class="fas fa-align-justify"></i>Form</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-chart-bar"></i>Chart</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-table"></i>Table</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i
+                                class="fas fa-file-invoice-dollar"></i>Invoice</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-money-check"></i>Bank</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fab fa-elementor"></i>UI
+                            element</a>
+                    </li>
+                    <li><a href="#" class="nav-link text-left" role="button"><i class="fas fa-map-signs"></i>Map</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn add-product">Add Product</a>
+            </div>
+        </nav>
+        <!--End Sidebar-->
+
+        <!--Start page Content-->
+        <div id="page-content-wrapper">
+            <div id="content">
+                <div class="container-fluid p-0 px-lg-0 px-md-0">
+                    <nav class="navbar navbar-expand navbar-light my-navbar">
+                        <div type="button" id="bar" class="nav-icon1 humburger animated fadeInLeft is-closed"
+                            data-toggle="offcanvas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!--Start Top bar search-->
+                        <form class="d-none d-sm-inline-block form-inline navbar-search">
+                            <div class="input-group custom-input">
+                                <input type="text" class="form-control bg-light" placeholder="search here..."
+                                    class="custom-input">
+
+                                <i class="fas fa-search  fa-sm icon-4"></i>
+                            </div>
+                        </form>
+                        <!--End Top bar search-->
+                        <!--Start Top bar nav-->
+                        <ul class="navbar-nav m-auto notification-nav">
+                            <li class="nav-item dropdown d-sm-none">
+                                <div class="dropdown-menu dropdown-menu-right p-3">
+                                    <form class="form-inline mr-auto w-100 navbar-search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control bg-light border-0 small"
+                                                placeholder="search for...">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button"><i
+                                                        class="fas fa-search fa-sm"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown"><a href="#" class="nav-link"><i class="fas fa-bell  icon"></i>
+                                    <span class="badge badge-danger badge-counter">6+</span>
+                                </a></li>
+                            <li class="nav-item dropdown"><a href="#" class="nav-link"><i
+                                        class="fas fa-envelope icon"></i></i>
+                                    <span class="badge badge-danger badge-counter">9+</span>
+                                </a></li>
+                            <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="userDropdown"
+                                    role="button" data-toggle="dropdown">
+                                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">MemoCode</span>
+                                    <img class="img-profile rounded-circle" src="img/logo.png" alt="">
+                                </a></li>
+
+                        </ul>
+
+                    </nav>
+                    <!--End Top bar nav-->
+                    <!--begin Page Content-->
+                    <div class="container-fluid px-lg-4">
+                        <div class="row">
+                            <div class="col-md-12 mt-lg-4 mt-4">
+                                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-blue">
+                                        generate report
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="card custom-card-1">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-4">
+                                                    Stock Total
+                                                </h5>
+                                                <h1 class="display-5 mt-1 mb-3">
+                                                    15000$
+                                                </h1>
+                                                <div class="mb-1">
+                                                    <span class="text-danger"><i
+                                                            class="fas fa-arrow-bottom-right"></i>364</span>
+                                                    <span class="text-muted">Since Last week</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card custom-card-2">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-4">
+                                                    Total Profit
+                                                </h5>
+                                                <h1 class="display-5 mt-1 mb-3">
+                                                    25000$
+                                                </h1>
+                                                <div class="mb-1">
+                                                    <span class="text-danger"><i
+                                                            class="fas fa-arrow-bottom-right"></i>364</span>
+                                                    <span class="text-muted">Since Last week</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card custom-card-3">
+                                            <div class="card-body">
+                                                <h5 class="card-title mb-4">
+                                                    Unique Visitor
+                                                </h5>
+                                                <h1 class="display-5 mt-1 mb-3">
+                                                    18.000
+                                                </h1>
+                                                <div class="mb-1">
+                                                    <span class="text-danger"><i
+                                                            class="fas fa-arrow-bottom-right"></i>364</span>
+                                                    <span class="text-muted">Since Last week</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title mt-3">
+                                            Standard Table Design
+                                        </h4>
+
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table v-middle">
+                                            <thead>
+                                                <tr class="bg-light">
+                                                    <th class="border-top-0">Name</th>
+                                                    <th class="border-top-0">Email</th>
+                                                    <th class="border-top-0">UserType</th>
+                                                    <th class="border-top-0">Joined</th>
+                                                    <th class="border-top-0">Sales</th>
+                                                    <th class="border-top-0">Purchase</th>
+                                                    <th class="border-top-0">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+
+                                                        <h4 class="m-b-0 font-16 ">Mika Bhand</h4>
+
+                                                    </td>
+                                                    <td>
+                                                        <p>mikahang@email.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Admin</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>25 March,2019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>50</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>360</p>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-success cutom-btn text-white">PENDING</a>
+
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+
+                                                        <h4 class="m-b-0 font-16 ">Kevien Hoster</h4>
+
+                                                    </td>
+                                                    <td>
+                                                        <p>info@email.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Admin</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>10 March,2019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>70</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>368</p>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-pink cutom-btn text-white">PENDING</a>
+
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+
+                                                        <h4 class="m-b-0 font-16 ">Ross Kopimon</h4>
+
+                                                    </td>
+                                                    <td>
+                                                        <p>rosskoli@email.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Subscriber</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>22 May,2019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>90</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>340</p>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-purple cutom-btn text-white">REJECT</a>
+
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+
+                                                        <h4 class="m-b-0 font-16 ">Miky Hussy</h4>
+
+                                                    </td>
+                                                    <td>
+                                                        <p>mikyhussy@email.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Admin</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>18 March,2019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>150</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>350</p>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-orange cutom-btn text-white">PENDING</a>
+
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+
+                                                        <h4 class="font-16 ">Andrew Straus</h4>
+
+                                                    </td>
+                                                    <td>
+                                                        <p>info@yourmail.com</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>Editor</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>20 April,2019</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>100</p>
+                                                    </td>
+                                                    <td>
+                                                        <p>364</p>
+                                                    </td>
+                                                    <td>
+                                                        <a class="btn btn-success cutom-btn text-white">REJECT</a>
+
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End page content-->
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row text-setting">
+                            <div class="col-6 text-left">
+                                <p class="mb-0">
+                                    <a href="#" class="text-setting">
+                                        <strong>Dashboard Memo Design &copy;</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="col-6 text-right info-footer">
+                                <ul class="list-inline">
+                                    <li class="footer-item">
+                                        <a href="#" class="text-setting">
+                                            Support
+                                        </a>
+                                        <a href="#" class="text-setting">
+                                            Help Center
+                                        </a>
+                                        <a href="#" class="text-setting">
+                                            Privacy
+                                        </a>
+                                        <a href="#" class="text-setting">
+                                            terms
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--popper js-->
+    <script src="js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
